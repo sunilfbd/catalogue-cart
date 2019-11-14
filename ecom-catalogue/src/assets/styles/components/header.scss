@@ -1,0 +1,62 @@
+.vu-header {
+    min-height: 55px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.vu-logo {
+    width: 15%;
+    float: left;
+    margin-left: 10px;
+}
+
+.vu-logo-img {
+    width: 100%;
+}
+
+.vu-nav-list {
+    display: flex;
+    margin-top: 12px;
+}
+
+.vu-nav-list-item { 
+    margin-right: 25px;
+}
+
+.vu-icn {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: transparent;
+    height: 24px;
+    width: 24px;
+    background-size: cover;
+    display: block;  
+    text-decoration: none;
+    color:$primary-black;
+}
+
+.vu-bag-icn {
+    background-image: url($icn-bag);
+}
+
+.vu-wishlist-icn {
+    background-image: url($icn-wishlist);
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.vu-count {
+    display: block;
+    position: relative;
+    right: -28px;
+    font-size: 16px;
+}
+
+.vu-wishlist-count {
+    top: 6px;
+}
+
+.vu-bag-count {
+    top: 8px;
+}

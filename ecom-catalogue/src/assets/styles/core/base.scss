@@ -1,0 +1,23 @@
+body {
+    background-color: #f0f0f0;
+    font-size: 75%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.vu-component-wrapper {
+    width: calc( 1190px - 40px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vu-app-wrapper {
+    margin: 40px;
+}
+
+.right-aligned {
+    float: right;
+}
+
+.left-aligned {
+    float: left;
+}
