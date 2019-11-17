@@ -1,7 +1,9 @@
 <template>
         <header class="vu-component-wrapper vu-header">
             <picture class="vu-logo left-aligned">
-                <img class="vu-logo-img" src="../../src/assets/logo.png" alt="AKQA logo" />
+                <a href="/">
+                    <img class="vu-logo-img" src="../../src/assets/logo.png" alt="AKQA logo" />
+                </a>
             </picture>
             <ul class="vu-nav-list right-aligned">
                 <li class="vu-nav-list-item">
@@ -14,7 +16,7 @@
                 </li>
 
                 <li class="vu-nav-list-item">
-                    <router-link class="vu-nav-list-item-link vu-icn vu-bag-icn" to="/">
+                    <router-link class="vu-nav-list-item-link vu-icn vu-bag-icn" to="/cart">
                         <span class="vu-count vu-bag-count">{{ productInBag }}</span>
                         <span class="visually-hidden">Shopping Bag</span>
                     </router-link>
