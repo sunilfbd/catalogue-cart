@@ -10,17 +10,27 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'My Collection',
+    }
   },
   {
     path: '/wishlist',
     name: 'wishlist',
-    component: Wishlist
+    component: Wishlist,
+    meta: {
+      title: 'My Wishlist',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga molestias rem. Necessitatibus, corporis voluptatibus.'
+    }
   },
   {
     path: '/cart',
     name: 'cart',
-    component: Cart
+    component: Cart,
+    meta: {
+      title: 'My Bag',
+    }
   }
   // {
   //   path: '/about',
