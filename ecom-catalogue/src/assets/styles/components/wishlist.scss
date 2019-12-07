@@ -3,7 +3,7 @@
      
     .vu-table {
         width: 80%;
-        margin: 0 auto;
+        margin: 40px auto;
     }
 
     .vu-table-row {
@@ -56,6 +56,7 @@
         height: 32px;
         width: 32px;
         border: none;
+        cursor: pointer;
     }
 
     .vu-wl-item-heading {
@@ -69,57 +70,16 @@
         margin: 7px 0;
     }
 
-    // .vu-wl-item-list {
-    //     @include clearfix;
-    // }
-
-    // .vu-wl-item {
-    //     margin-bottom: 20px;
-    //     display: flex;
-    // }
-
-    // .vu-wl-item-picture {
-    //     width: 20%;
-    //     padding: 10px;
-    //     border: 1px solid #333;
-    //     margin-right: 20px;
-    // }
-
-    // .vu-wl-item-img {
-    //     width: 100%;
-    // }
-
-    // .vu-wl-btn-wrapper {
-    //     width: 30%;
-    // }
-
-    // .vu-wl-item-detail {
-    //     width: 50%;
-    // }
-
-    // .vu-wl-item-heading {
-    //     font-size: 18px;
-    //     line-height: 1.25;
-    //     margin-bottom: 10px;
-    // }
-
-    // .vu-wl-item-price {
-    //     font-size: 18px;
-    //     font-weight: 700;
-    // }
-
-    // .vu-wl-cta-moveToCart {
-    //     flex: none;
-    //     border: none;
-    //     font-size: 18px;
-    //     text-align: right;
-    //     background-color: red;
-    //     color: #fff;
-    //     padding: 10px 20px;
-    //     text-decoration: none;
-    //     margin-bottom: 10px;
-    // }
-
-
+    .vu-wl-cta-moveToCart {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left top;
+        background-image: url($icn-move-cart);
+        height: 32px;
+        width: 32px;
+        border: none;
+        cursor: pointer;
+    }
 
 }

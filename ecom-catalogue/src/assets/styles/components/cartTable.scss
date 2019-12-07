@@ -1,11 +1,10 @@
 .vu-cart-table {
     width: 100%;
-    margin: 20px 0;
+    margin: 30px 0;
     border-collapse: collapse;
 }
 
 .vu-cart-table-header {
-    background-color: #bbb;
     font-size: 14px;
     font-weight: 700;
 }
@@ -17,20 +16,27 @@
 .vu-col-prod-remove {
     padding: 10px;
     text-align: center;
-    border: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
     vertical-align: middle;
     font-size: 14px;
 }
 
+.vu-col-prod-remove {
+    border: none;
+}
+
 .vu-col-prod-name {
-    width: 52%;
+    width: 55%;
 }
 
 .vu-col-prod-price,
 .vu-col-prod-quantity,
-.vu-col-prod-item-total,
+.vu-col-prod-item-total{ 
+    width: 13%;
+}
+
 .vu-col-prod-remove { 
-    width: 12%;
+    width: 6%;
 }
 
 .vu-cta-remove {
@@ -50,15 +56,22 @@
     border: 1px solid #ccc;
 }
 
+.vu-total-row {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    margin-top: 20px;
+}
+
 .vu-col-total-label,
 .vu-col-total-value {
     padding: 10px;
-    border: 1px solid #aaa;
-    border-top: 3px solid #333;
-    border-bottom: 3px solid #333;
     vertical-align: middle;
     font-size: 16px;
     font-weight: 700;
+}
+
+.vu-table-row-total {
+    padding-top: 20px;
 }
 
 .vu-col-total-label {
@@ -67,5 +80,5 @@
 
 .vu-col-total-value {
     text-align: left;
-    padding-left: 50px;
+    padding-left: 60px;
 }

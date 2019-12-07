@@ -12,7 +12,7 @@
                     <th class="vu-col-prod-price">Product Price</th>
                     <th class="vu-col-prod-quantity">Product Quantity</th>
                     <th class="vu-col-prod-item-total">Item total</th>
-                    <th class="vu-col-prod-remove">Remove Item</th>
+                    <th class="vu-col-prod-remove"></th>
                 </tr>
             </thead>
             <tbody>
@@ -47,21 +47,14 @@
                     </td>
                 </tr>
             </tbody>
-            <tfoot>
+            <tfoot class="vu-total-row">
+                <tr>
+                    <td colspan="3" class="vu-col-total-label">Total Tax (10%)</td>
+                    <td colspan="2" class="vu-col-total-value">10</td>
+                </tr>
                 <tr>
                     <td colspan="3" class="vu-col-total-label">Total Amount (Including tax)</td>
-                    <!-- <td class="vu-col-prod-price">1000</td>
-                    <td class="vu-col-prod-quantity">
-                        <input type="text" value="1" class="vu-text-box vu-prod-quant" name="prod-quant" id="prod-quant" />
-                    </td> -->
                     <td colspan="2" class="vu-col-total-value">1000</td>
-                    <!-- <td class="vu-col-prod-remove">
-                        <button class="vu-cta-remove">
-                            <span class="visually-hidden">
-                                Remove
-                            </span>
-                        </button>
-                    </td> -->
                 </tr>
             </tfoot>
         </table>
