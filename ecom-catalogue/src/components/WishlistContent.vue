@@ -1,7 +1,11 @@
 <template>
     <div class="vu-component-wrapper vu-wl-content">
-        <h1>{{ $route.meta.title }}</h1>
-        <p>{{ $route.meta.description }}</p>
+        
+        <div class="vu-page-header">
+            <h1 class="vu-page-heading">{{ $route.meta.title }}</h1>
+            <p class="vu-page-desciption">{{ $route.meta.description }}</p>
+        </div>
+
         <table class="vu-table">
             <tbody>
                 <tr class="vu-table-row">

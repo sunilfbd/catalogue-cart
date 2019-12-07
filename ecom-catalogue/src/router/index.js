@@ -29,7 +29,8 @@ const routes = [
     name: 'cart',
     component: Cart,
     meta: {
-      title: 'My Bag',
+      title: 'My Cart',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga molestias rem. Necessitatibus, corporis voluptatibus.'
     }
   }
   // {

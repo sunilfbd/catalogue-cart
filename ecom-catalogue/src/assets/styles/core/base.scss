@@ -21,3 +21,20 @@ body {
 .left-aligned {
     float: left;
 }
+
+.vu-text-box {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.vu-page-header {
+    .vu-page-heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .vu-page-desciption {
+        font-size: 14px;
+    }
+}
