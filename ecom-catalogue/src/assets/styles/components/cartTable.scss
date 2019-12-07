@@ -1,0 +1,71 @@
+.vu-cart-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.vu-cart-table-header {
+    background-color: #bbb;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.vu-col-prod-name,
+.vu-col-prod-price,
+.vu-col-prod-quantity,
+.vu-col-prod-item-total,
+.vu-col-prod-remove {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #aaa;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.vu-col-prod-name {
+    width: 52%;
+}
+
+.vu-col-prod-price,
+.vu-col-prod-quantity,
+.vu-col-prod-item-total,
+.vu-col-prod-remove { 
+    width: 12%;
+}
+
+.vu-cta-remove {
+    background-image: url($icn-delete);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 0 0;
+    background-size: cover ;
+    height: 30px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+.vu-prod-quant {
+    width: 60px;
+    border: 1px solid #ccc;
+}
+
+.vu-col-total-label,
+.vu-col-total-value {
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-top: 3px solid #333;
+    border-bottom: 3px solid #333;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.vu-col-total-label {
+    text-align: right;
+}
+
+.vu-col-total-value {
+    text-align: left;
+    padding-left: 50px;
+}
