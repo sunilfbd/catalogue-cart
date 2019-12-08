@@ -13,6 +13,7 @@ const routes = [
     component: Home,
     meta: {
       title: 'My Collection',
+      description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam fuga molestias rem. Necessitatibus, corporis voluptatibus.'
     }
   },
   {

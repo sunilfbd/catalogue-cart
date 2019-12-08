@@ -19,19 +19,28 @@
     export default {
         name: 'CollectionCard',
         props: ['deal'],
+        computed: {
+            dealsList() {
+                return this.$store.state.dealList
+            }
+        },
+
         methods: {
             addDeals(e) {
                 e.preventDefault();
-                this.$store.commit('updatedBagCount', {
-                    productKey: this.deal.key
-                });
+                this.$store.commit('updatedBagCount', this.getDealItem(this.deal.key));
             },
 
             addTowihslist(e) {
                 e.target.classList.toggle('active');
-                this.$store.commit('updateWishlist',{
-                    productKey: this.deal.key
-                })
+                this.$store.commit('updateWishlist', this.getDealItem(this.deal.key));
+            },
+
+            getDealItem(itemID) {
+                var dealsItem = this.dealsList.find((item) => {
+                    return item.key == itemID;
+                });
+                return dealsItem;
             }
         }
     }

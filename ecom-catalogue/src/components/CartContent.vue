@@ -16,7 +16,22 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr v-for="bagItem in itemInBag" :key="bagItem.id">
+                    <td class="vu-col-prod-name">{{ bagItem.title}}</td>
+                    <td class="vu-col-prod-price">₹ {{ bagItem.price}}</td>
+                    <td class="vu-col-prod-quantity">
+                        <input type="text" value="1" class="vu-text-box vu-prod-quant" name="prod-quant" id="prod-quant" />
+                    </td>
+                    <td class="vu-col-prod-item-total">₹ {{bagItem.price}}</td>
+                    <td class="vu-col-prod-remove">
+                        <button class="vu-cta-remove">
+                            <span class="visually-hidden">
+                                Remove
+                            </span>
+                        </button>
+                    </td>
+                </tr>
+                <!-- <tr>
                     <td class="vu-col-prod-name">Lorem ipsum dolor de amet</td>
                     <td class="vu-col-prod-price">1000</td>
                     <td class="vu-col-prod-quantity">
@@ -30,22 +45,7 @@
                             </span>
                         </button>
                     </td>
-                </tr>
-                <tr>
-                    <td class="vu-col-prod-name">Lorem ipsum dolor de amet</td>
-                    <td class="vu-col-prod-price">1000</td>
-                    <td class="vu-col-prod-quantity">
-                        <input type="text" value="1" class="vu-text-box vu-prod-quant" name="prod-quant" id="prod-quant" />
-                    </td>
-                    <td class="vu-col-prod-item-total">1000</td>
-                    <td class="vu-col-prod-remove">
-                        <button class="vu-cta-remove">
-                            <span class="visually-hidden">
-                                Remove
-                            </span>
-                        </button>
-                    </td>
-                </tr>
+                </tr> -->
             </tbody>
             <tfoot class="vu-total-row">
                 <tr>
@@ -63,7 +63,12 @@
 
 <script>
     export default {
-        name: 'CartContent'
+        name: 'CartContent',
+        computed: {
+            itemInBag() {
+                return this.$store.state.productInBag;
+            }
+        }
     }
 </script>
 
