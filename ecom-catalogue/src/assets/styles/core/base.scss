@@ -1,0 +1,40 @@
+body {
+    background-color: #f0f0f0;
+    font-size: 75%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.vu-component-wrapper {
+    width: calc( 1190px - 40px);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.vu-app-wrapper {
+    margin: 40px;
+}
+
+.right-aligned {
+    float: right;
+}
+
+.left-aligned {
+    float: left;
+}
+
+.vu-text-box {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.vu-page-header {
+    .vu-page-heading {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .vu-page-desciption {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,67 @@
+
+.vu-card-item {
+    width: calc(25% - 42px);
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.vu-card-img {
+    width: 100%;
+}
+
+.vue-card-title {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+    text-transform: uppercase;
+    min-height: 65px;
+}
+
+.vu-card-detail-wrapper {
+    flex: none;
+    bottom: 10px;
+    left: 10px;
+}
+
+.vu-card-copy-text {
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 600;   
+}
+
+.vu-card-more-link {
+    background-color: red;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    width: calc(100% - 40px);
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.vu-cta {
+    float: right;
+    border: none;
+    background-color: transparent;
+    height: 20px;
+    width: 20px;
+    margin-top: -3px;
+    margin-right: 4px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    outline: none;
+    &.vu-wishlist-icn {
+        background-image: url($icn-wishlist);
+    }
+}
